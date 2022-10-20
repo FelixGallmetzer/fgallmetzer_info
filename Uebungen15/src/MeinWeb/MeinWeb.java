@@ -64,6 +64,7 @@ public class MeinWeb extends JFrame
 		
 		searchBar = new JTextField();
 		adresse.setLabelFor(searchBar);
+		searchBar.setText("https://tfobz.net");
 		searchBar.setBounds(70, 0, framewidth-150, 40);
 		EingabeListener el = new EingabeListener();
 		searchBar.addKeyListener(el);
@@ -97,6 +98,7 @@ public class MeinWeb extends JFrame
 		leiste = new JScrollPane(website);
 		leiste.setBounds(0,40,framewidth-6,frameheight-76);
 		this.getContentPane().add(leiste);
+		loadWebsite();
 	}
 	
 	public void loadWebsite() {
